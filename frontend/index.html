@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Events Feed</title>
+    <meta name="description" content="Real-time GitHub webhook event tracker" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>GitHub Events</h1>
+        <p class="subtitle">
+          Real-time webhook event tracker • Auto-refreshes every 15 seconds
+        </p>
+      </header>
+
+      <div class="status-bar">
+        <span id="status">Loading...</span>
+        <span class="event-count">Total events: <span id="count">0</span></span>
+      </div>
+
+      <ul id="feed"></ul>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
